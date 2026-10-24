@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/otto-finance/integrations
+- https://n8n.io/integrations/otto-finance/
+- https://composio.dev/toolkits/otto-finance
+- https://monid.ai/tools/otto-finance
+checked:
+- https://composio.dev/toolkits/otto-finance
+- https://monid.ai/tools/otto-finance
+- https://n8n.io/integrations/otto-finance/
+- https://zapier.com/apps/otto-finance/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

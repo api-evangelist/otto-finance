@@ -1,0 +1,92 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 6
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - identity
+  - other
+  - website
+hosts:
+- host: api.ottofinance.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ottofinance.io
+  role: api
+  relation: own
+- host: app.ottofinance.io
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ottofinance.io
+  role: other
+  relation: own
+- host: login.ottofinance.io
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ottofinance.io
+  role: identity
+  relation: own
+- host: ottofinance.io
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Compliance
+  - Security
+  - Documentation
+  - APIReference
+  - GettingStarted
+  - Support
+  - Blog
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: ottofinance.io
+  role: docs
+  relation: own
+- host: security.ottofinance.io
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ottofinance.io
+  role: other
+  relation: own
+- host: www.ottofinance.io
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - hosting
+  vendor: vercel
+  registrable_domain: ottofinance.io
+  role: website
+  relation: own

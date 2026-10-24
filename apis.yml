@@ -1,25 +1,87 @@
 aid: otto-finance
+
 name: Otto Finance
-description: 'Otto Finance is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by sequoia-capital) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ottofinance.io/og-image.png
+
+description: "Otto Finance provides an AI‑driven automation and governance platform for regulated UK wealth management firms. It streamlines onboarding, annual reviews, compliance and client workflow automation, delivering a full audit trail and real‑time monitoring. The solution connects to existing systems, automates critical processes, and ensures security and data protection compliance, serving firms with billions in assets under management."
+
 url: https://raw.githubusercontent.com/api-evangelist/otto-finance/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- FinTech
+- Wealth Management
+- Automation
+- AI
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No developer documentation or API specifications were found on ottofinance.io domains.
+  evidence:
+    - url: https://ottofinance.io/platform
+      status: 200
+  checked: '2026-10-23'
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- sequoia-capital
+
 common:
+- type: Compliance
+  url: https://ottofinance.io/security
+- type: WellKnown
+  url: well-known/otto-finance-well-known.yml
+- type: Hosts
+  url: hosts/otto-finance-hosts.yml
+- type: Vendors
+  url: vendors/otto-finance-vendors.yml
+- type: Security
+  url: https://ottofinance.io/security
+- type: TrustCenter
+  url: security/otto-finance-trust-center.yml
+- type: DomainSecurity
+  url: security/otto-finance-domain-security.yml
 - type: Website
   url: https://www.ottofinance.io/
+- type: Documentation
+  url: https://ottofinance.io/platform
+- type: APIReference
+  url: https://ottofinance.io/platform
+- type: GettingStarted
+  url: https://ottofinance.io/platform
+- type: Support
+  url: https://ottofinance.io/contact
+- type: Blog
+  url: https://ottofinance.io/news
+- type: TermsOfService
+  url: https://ottofinance.io/legal/terms
+- type: PrivacyPolicy
+  url: https://ottofinance.io/legal/privacy
+
+apis: []
+
+x-backed-by:
+- sequoia-capital
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
